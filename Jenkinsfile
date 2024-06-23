@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  environment {
+    brew = "/opt/homebrew/bin/brew"
+  }
   stages {
     // stage('verify k6') {
     //   steps {
