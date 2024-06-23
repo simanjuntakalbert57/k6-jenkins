@@ -8,7 +8,7 @@ pipeline {
     // }
     stage('run k6 test') {
       steps {
-        // sh 'k6 run permance-test.js'
+        echo 'Installing k6'
       }
     }
   }
