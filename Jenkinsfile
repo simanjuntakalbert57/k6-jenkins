@@ -15,7 +15,7 @@ pipeline {
         sh 'chmod +x ./setup_k6.sh'
         sh './setup_k6.sh'
         echo 'Running K6 performance tests...'
-        sh 'k6 run influxdb=http://192.168.1.48:8086/k6 permance-test.js'
+        sh 'k6 run --out influxdb=http://192.168.1.48:8086/k6 script.js'
       }
     }
   }
